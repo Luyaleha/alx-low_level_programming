@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* swaps the values of two integers
-* pointenr 1
-* pointer
+* swap_int - swaps the values of two intepoin
+* @a: pointpoin
+* @b: pointer 2
 * Return: void
 */
 void swap_int(int *a, int *b)
