@@ -1,26 +1,15 @@
 #include "main.h"
 /**
-*_atoi - converts string to int
-*@s: string to convert
-*Description: converts string to int considering all negatives
-*Return: integer
+* _strlen - returns length of string
+* @s: string
+* Return: length of strlen
 */
-int _atoi(char *s)
+int _strlen(char *s)
 {
-int i, val, sign;
-val = 0;
-sign = 1;
-for (i = 0; s[i] != '\0' && !(s[i] >= '0' && s[i] <= '9'); i++)
+int len = 0;
+while (s[len] != '\0')
 {
-if (s[i] == '-')
-sign = sign * -1;
+len++;
 }
-for (i = 0; s[i] != 0; i++)
-{
-if (s[i] >= '0' && s[i] <= '9')
-val = val * 10 + sign * (s[i] - '0');
-if (val != 0 && !(s[i] >= '0' && s[i] <= '9'))
-return (val)
-}
-return (val);
+return (len);
 }
