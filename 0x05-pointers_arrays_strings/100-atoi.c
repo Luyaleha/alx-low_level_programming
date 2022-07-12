@@ -20,7 +20,7 @@ for (i = 0; s[i] != 0; i++)
 if (s[i] >= '0' && s[i] <= '9')
 val = val * 10 + sign * (s[i] - '0');
 if (val != 0 && !(s[i] >= '0' && s[i] <= '9'))
-return (val)
+return (val);
 }
 return (val);
 }
