@@ -41,6 +41,7 @@ close_dest = close(dest);
 check_IO_stat(close_dest, dest, NULL, 'C');
 return (0);
 }
+
 /**
  * check_IO_stat - checks if a file can be opened or closed
  * @stat: file descriptor of the file to be opened
@@ -64,7 +65,8 @@ exit(98);
 }
 else if (mode == 'W' && stat == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename) 
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 exit(99);
 }
 }
+
